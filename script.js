@@ -37,6 +37,20 @@ window.addEventListener("load", function() {
         document.getElementById("inicio").querySelector("h2").innerHTML = "Bem-vindo de volta, " + visitante + "!";
     }
 });
+// Contador de visitas usando localStorage
+let visitas = localStorage.getItem("visitas");
+
+// Se não existir ainda, começa em 0
+if (!visitas) {
+    visitas = 0;
+}
+
+// Incrementa a cada visita
+visitas++;
+localStorage.setItem("visitas", visitas);
+
+// Atualiza o texto no HTML
+document.getElementById("visitas").textContent = "Você é o visitante número: " + visitas;
 
 // 7. Alterar estilo da página (tema escuro/claro)
 function alternarTema() {
