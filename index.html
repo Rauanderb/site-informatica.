@@ -1,0 +1,96 @@
+<<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Site de Informática</h1>
+        <nav>
+            <a href="#inicio">Início</a> |
+            <a href="#sobre">Sobre</a> |
+            <a href="#produtos">Produtos</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Início -->
+    <section id="inicio">
+        <h2>Bem-vindo!</h2>
+        <p>Este é um site para você que deseja montar seu PC!</p>
+        <img src=https://wallpapers.com/images/hd/pc-pictures-zwf8s4bb227lflqo.jpg
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Somos apaixonados por tecnologia e informática.</p>
+        <ul>
+            <li>Produtos de qualidade</li>
+            <li>Atendimento rápido</li>
+            <li>Suporte confiável</li>
+        </ul>
+    </section>
+
+    <!-- Produtos -->
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Notebook</td>
+                <td>R$ 3.000,00</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>R$ 50,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="formContato">
+            <label>Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required><br>
+
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required><br>
+
+            <label>Telefone:</label>
+            <input type="tel" id="telefone" placeholder="Digite seu telefone"><br>
+
+            <label>Serviço:</label>
+            <select id="servico">
+                <option>Compra</option>
+                <option>Suporte</option>
+            </select><br>
+
+            <label>Mensagem:</label>
+            <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Botões extras para JS -->
+    <section id="extras">
+        <h2>Funcionalidades Extras</h2>
+        <button onclick="mostrarMensagem()">Mostrar mensagem</button>
+        <button onclick="alternarTema()">Alternar tema</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - A melhor loja de PC! | Contato: contato@lojapc.com</p>
+    </footer>
+</body>
+</html>
