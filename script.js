@@ -1,5 +1,3 @@
-/// script.js
-
 // 1. Alterar texto de uma seção ao clicar em um botão
 function alterarTexto() {
     document.getElementById("inicio").querySelector("p").innerHTML = "Monte seu PC com os melhores componentes!";
@@ -37,7 +35,13 @@ window.addEventListener("load", function() {
         document.getElementById("inicio").querySelector("h2").innerHTML = "Bem-vindo de volta, " + visitante + "!";
     }
 });
-// Contador de visitas usando localStorage
+
+// 7. Alterar estilo da página (tema escuro/claro)
+function alternarTema() {
+    document.body.classList.toggle("dark-mode");
+}
+
+// 8. Contador de visitas usando localStorage
 let visitas = localStorage.getItem("visitas");
 
 // Se não existir ainda, começa em 0
@@ -51,14 +55,3 @@ localStorage.setItem("visitas", visitas);
 
 // Atualiza o texto no HTML
 document.getElementById("visitas").textContent = "Você é o visitante número: " + visitas;
-
-// 7. Alterar estilo da página (tema escuro/claro)
-function alternarTema() {
-    document.body.classList.toggle("dark-mode");
-}
-
-// 8. Contador de visitas usando localStorage
-let visitas = localStorage.getItem("visitas") || 0;
-visitas++;
-localStorage.setItem("visitas", visitas);
-console.log("Número de visitas: " + visitas);
